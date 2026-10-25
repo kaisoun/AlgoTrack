@@ -1,0 +1,342 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\DotNetProjects\\AlgoTrack\\AlgoTrack.Module\\AlgoTrack.Module.csproj": {}
+  },
+  "projects": {
+    "E:\\DotNetProjects\\AlgoTrack\\AlgoTrack.Module\\AlgoTrack.Module.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\DotNetProjects\\AlgoTrack\\AlgoTrack.Module\\AlgoTrack.Module.csproj",
+        "projectName": "AlgoTrack.Module",
+        "projectPath": "E:\\DotNetProjects\\AlgoTrack\\AlgoTrack.Module\\AlgoTrack.Module.csproj",
+        "packagesPath": "C:\\Users\\kaisa\\.nuget\\packages\\",
+        "outputPath": "E:\\DotNetProjects\\AlgoTrack\\AlgoTrack.Module\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "centralPackageFloatingVersionsEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 26.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kaisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 26.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 26.1\\Components\\Offline Packages": {},
+          "C:\\Program Files\\DevExpress 26.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "targetAlias": "net10.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.17.1, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.AI": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.AuditTrail.EFCore": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.Chart": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.CloneObject": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.CodeAnalysis": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.ConditionalAppearance": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.Dashboards": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.EFCore": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.Notifications": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.Office": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.PivotGrid": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.ReportsV2": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.Scheduler": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.Security": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.StateMachine": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.TreeListEditors": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.Validation": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.ExpressApp.ViewVariantsModule": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.Persistent.Base": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "DevExpress.Persistent.BaseImpl.EFCore": {
+              "target": "Package",
+              "version": "[26.1.3, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.CodeAnalysis.Workspaces.MSBuild": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.1.2, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "suppressParent": "None",
+              "target": "Package",
+              "version": "[10.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[10.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[10.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[10.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[10.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.18.0, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Security.Cryptography.Pkcs": {
+              "target": "Package",
+              "version": "[9.0.21, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Security.Cryptography.Xml": {
+              "target": "Package",
+              "version": "[9.0.21, )",
+              "noWarn": [
+                "NU1510"
+              ],
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Azure.AI.OpenAI": "2.3.0-beta.2",
+            "Azure.Identity": "1.17.1",
+            "DevExpress.AIIntegration.AspNetCore.Reporting": "26.1.3.0",
+            "DevExpress.AIIntegration.Blazor.Reporting.Viewer": "26.1.3.0",
+            "DevExpress.Drawing.Skia": "26.1.3.0",
+            "DevExpress.ExpressApp": "26.1.3.0",
+            "DevExpress.ExpressApp.AI": "26.1.3.0",
+            "DevExpress.ExpressApp.AI.Blazor": "26.1.3.0",
+            "DevExpress.ExpressApp.AI.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.Api.EFCore.All": "26.1.3.0",
+            "DevExpress.ExpressApp.AuditTrail.EFCore": "26.1.3.0",
+            "DevExpress.ExpressApp.Blazor": "26.1.3.0",
+            "DevExpress.ExpressApp.Chart": "26.1.3.0",
+            "DevExpress.ExpressApp.Chart.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.CloneObject": "26.1.3.0",
+            "DevExpress.ExpressApp.CodeAnalysis": "26.1.3.0",
+            "DevExpress.ExpressApp.ConditionalAppearance": "26.1.3.0",
+            "DevExpress.ExpressApp.Dashboards": "26.1.3.0",
+            "DevExpress.ExpressApp.Dashboards.Blazor": "26.1.3.0",
+            "DevExpress.ExpressApp.Dashboards.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.EFCore": "26.1.3.0",
+            "DevExpress.ExpressApp.FileAttachment.Blazor": "26.1.3.0",
+            "DevExpress.ExpressApp.FileAttachment.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.MultiTenancy.AspNetCore.EFCore": "26.1.3.0",
+            "DevExpress.ExpressApp.MultiTenancy.Blazor.EFCore": "26.1.3.0",
+            "DevExpress.ExpressApp.MultiTenancy.EFCore": "26.1.3.0",
+            "DevExpress.ExpressApp.MultiTenancy.WebApi.EFCore": "26.1.3.0",
+            "DevExpress.ExpressApp.MultiTenancy.Win.EFCore": "26.1.3.0",
+            "DevExpress.ExpressApp.Notifications": "26.1.3.0",
+            "DevExpress.ExpressApp.Notifications.Blazor": "26.1.3.0",
+            "DevExpress.ExpressApp.Notifications.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.Office": "26.1.3.0",
+            "DevExpress.ExpressApp.Office.Blazor": "26.1.3.0",
+            "DevExpress.ExpressApp.Office.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.PivotGrid": "26.1.3.0",
+            "DevExpress.ExpressApp.PivotGrid.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.ReportsV2": "26.1.3.0",
+            "DevExpress.ExpressApp.ReportsV2.Blazor": "26.1.3.0",
+            "DevExpress.ExpressApp.ReportsV2.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.Scheduler": "26.1.3.0",
+            "DevExpress.ExpressApp.Scheduler.Blazor": "26.1.3.0",
+            "DevExpress.ExpressApp.Scheduler.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.Security": "26.1.3.0",
+            "DevExpress.ExpressApp.Security.AspNetCore.EFCore": "26.1.3.0",
+            "DevExpress.ExpressApp.Security.EFCore.Extensions.Blazor": "26.1.3.0",
+            "DevExpress.ExpressApp.Security.EFCore.Extensions.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.StateMachine": "26.1.3.0",
+            "DevExpress.ExpressApp.TreeListEditors": "26.1.3.0",
+            "DevExpress.ExpressApp.TreeListEditors.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.Validation": "26.1.3.0",
+            "DevExpress.ExpressApp.Validation.Blazor": "26.1.3.0",
+            "DevExpress.ExpressApp.Validation.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.ViewVariantsModule": "26.1.3.0",
+            "DevExpress.ExpressApp.Win": "26.1.3.0",
+            "DevExpress.ExpressApp.Win.Design": "26.1.3.0",
+            "DevExpress.ExpressApp.Workflow": "26.1.3.0",
+            "DevExpress.Persistent.Base": "26.1.3.0",
+            "DevExpress.Persistent.BaseImpl.EFCore": "26.1.3.0",
+            "DevExpress.RichEdit.Export": "26.1.3.0",
+            "DevExpress.Win.Design": "26.1.3.0",
+            "Microsoft.CodeAnalysis.Common": "5.0.0",
+            "Microsoft.CodeAnalysis.CSharp": "5.0.0",
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": "5.0.0",
+            "Microsoft.CodeAnalysis.Workspaces.MSBuild": "5.0.0",
+            "Microsoft.Data.SqlClient": "6.1.2",
+            "Microsoft.EntityFrameworkCore.Design": "10.0.0",
+            "Microsoft.EntityFrameworkCore.InMemory": "10.0.0",
+            "Microsoft.EntityFrameworkCore.Proxies": "10.0.0",
+            "Microsoft.EntityFrameworkCore.SqlServer": "10.0.0",
+            "Microsoft.Extensions.AI.OpenAI": "9.7.1-preview.1.25365.4",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.0",
+            "Selenium.Support": "4.35.0",
+            "Selenium.WebDriver": "4.35.0",
+            "Swashbuckle.AspNetCore": "6.9.0",
+            "Swashbuckle.AspNetCore.Annotations": "6.9.0",
+            "System.IdentityModel.Tokens.Jwt": "8.18.0",
+            "System.Security.Cryptography.Pkcs": "9.0.21",
+            "System.Security.Cryptography.Xml": "9.0.21"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

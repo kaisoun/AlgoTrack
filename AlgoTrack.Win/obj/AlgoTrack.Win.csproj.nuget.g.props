@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\kaisa\.nuget\packages\;C:\Program Files\DevExpress 26.1\Components\Offline Packages;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">7.0.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\kaisa\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files\DevExpress 26.1\Components\Offline Packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\10.0.0\buildTransitive\net10.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\10.0.0\buildTransitive\net10.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.11.0\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.11.0\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\10.0.0\build\net10.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\10.0.0\build\net10.0\Microsoft.EntityFrameworkCore.Design.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview\8.0.10\buildTransitive\Microsoft.AspNetCore.Components.WebView.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview\8.0.10\buildTransitive\Microsoft.AspNetCore.Components.WebView.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.windowsforms\8.0.100\build\Microsoft.AspNetCore.Components.WebView.WindowsForms.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.windowsforms\8.0.100\build\Microsoft.AspNetCore.Components.WebView.WindowsForms.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.data.desktop\26.1.3\build\net8.0-windows\DevExpress.Data.Desktop.props" Condition="Exists('$(NuGetPackageRoot)devexpress.data.desktop\26.1.3\build\net8.0-windows\DevExpress.Data.Desktop.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.diagram.core\26.1.3\build\net8.0-windows\DevExpress.Diagram.Core.props" Condition="Exists('$(NuGetPackageRoot)devexpress.diagram.core\26.1.3\build\net8.0-windows\DevExpress.Diagram.Core.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.themes.fluent\26.1.3\buildTransitive\DevExpress.Blazor.Themes.Fluent.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.themes.fluent\26.1.3\buildTransitive\DevExpress.Blazor.Themes.Fluent.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.themes\26.1.3\buildTransitive\DevExpress.Blazor.Themes.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.themes\26.1.3\buildTransitive\DevExpress.Blazor.Themes.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.resources\26.1.3\buildTransitive\DevExpress.Blazor.Resources.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.resources\26.1.3\buildTransitive\DevExpress.Blazor.Resources.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor\26.1.3\buildTransitive\net5.0\DevExpress.Blazor.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor\26.1.3\buildTransitive\net5.0\DevExpress.Blazor.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">C:\Users\kaisa\.nuget\packages\microsoft.web.webview2\1.0.2903.40</PkgMicrosoft_Web_WebView2>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\kaisa\.nuget\packages\microsoft.codeanalysis.analyzers\3.11.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.data\26.1.3</PkgDevExpress_Data>
+    <PkgDevExpress_Xpo Condition=" '$(PkgDevExpress_Xpo)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.xpo\26.1.3</PkgDevExpress_Xpo>
+    <PkgDevExpress_Utils Condition=" '$(PkgDevExpress_Utils)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.utils\26.1.3</PkgDevExpress_Utils>
+    <PkgDevExpress_Win_Navigation Condition=" '$(PkgDevExpress_Win_Navigation)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.navigation\26.1.3</PkgDevExpress_Win_Navigation>
+    <PkgDevExpress_Win_TreeList Condition=" '$(PkgDevExpress_Win_TreeList)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.treelist\26.1.3</PkgDevExpress_Win_TreeList>
+    <PkgDevExpress_Win_Printing Condition=" '$(PkgDevExpress_Win_Printing)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.printing\26.1.3</PkgDevExpress_Win_Printing>
+    <PkgDevExpress_Win_VerticalGrid Condition=" '$(PkgDevExpress_Win_VerticalGrid)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.verticalgrid\26.1.3</PkgDevExpress_Win_VerticalGrid>
+    <PkgDevExpress_Win_TreeMap Condition=" '$(PkgDevExpress_Win_TreeMap)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.treemap\26.1.3</PkgDevExpress_Win_TreeMap>
+    <PkgDevExpress_Win_Grid Condition=" '$(PkgDevExpress_Win_Grid)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.grid\26.1.3</PkgDevExpress_Win_Grid>
+    <PkgDevExpress_Win_RichEdit Condition=" '$(PkgDevExpress_Win_RichEdit)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.richedit\26.1.3</PkgDevExpress_Win_RichEdit>
+    <PkgDevExpress_Win_PivotGrid Condition=" '$(PkgDevExpress_Win_PivotGrid)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.pivotgrid\26.1.3</PkgDevExpress_Win_PivotGrid>
+    <PkgDevExpress_Win_Diagram Condition=" '$(PkgDevExpress_Win_Diagram)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.diagram\26.1.3</PkgDevExpress_Win_Diagram>
+    <PkgDevExpress_Win Condition=" '$(PkgDevExpress_Win)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win\26.1.3</PkgDevExpress_Win>
+    <PkgDevExpress_DataAccess Condition=" '$(PkgDevExpress_DataAccess)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.dataaccess\26.1.3</PkgDevExpress_DataAccess>
+    <PkgDevExpress_DataAccess_UI Condition=" '$(PkgDevExpress_DataAccess_UI)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.dataaccess.ui\26.1.3</PkgDevExpress_DataAccess_UI>
+    <PkgDevExpress_Win_Spreadsheet Condition=" '$(PkgDevExpress_Win_Spreadsheet)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.spreadsheet\26.1.3</PkgDevExpress_Win_Spreadsheet>
+    <PkgDevExpress_Win_SpellChecker Condition=" '$(PkgDevExpress_Win_SpellChecker)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.spellchecker\26.1.3</PkgDevExpress_Win_SpellChecker>
+    <PkgDevExpress_Win_Scheduler Condition=" '$(PkgDevExpress_Win_Scheduler)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.scheduler\26.1.3</PkgDevExpress_Win_Scheduler>
+    <PkgDevExpress_Win_SchedulerReporting Condition=" '$(PkgDevExpress_Win_SchedulerReporting)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.schedulerreporting\26.1.3</PkgDevExpress_Win_SchedulerReporting>
+    <PkgDevExpress_Win_Charts Condition=" '$(PkgDevExpress_Win_Charts)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.charts\26.1.3</PkgDevExpress_Win_Charts>
+    <PkgDevExpress_Win_Reporting Condition=" '$(PkgDevExpress_Win_Reporting)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.reporting\26.1.3</PkgDevExpress_Win_Reporting>
+    <PkgDevExpress_Win_SchedulerExtensions Condition=" '$(PkgDevExpress_Win_SchedulerExtensions)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.schedulerextensions\26.1.3</PkgDevExpress_Win_SchedulerExtensions>
+    <PkgDevExpress_Win_PdfViewer Condition=" '$(PkgDevExpress_Win_PdfViewer)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.pdfviewer\26.1.3</PkgDevExpress_Win_PdfViewer>
+    <PkgDevExpress_Win_Map Condition=" '$(PkgDevExpress_Win_Map)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.map\26.1.3</PkgDevExpress_Win_Map>
+    <PkgDevExpress_Win_Gauges Condition=" '$(PkgDevExpress_Win_Gauges)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.gauges\26.1.3</PkgDevExpress_Win_Gauges>
+    <PkgDevExpress_Win_Gantt Condition=" '$(PkgDevExpress_Win_Gantt)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.gantt\26.1.3</PkgDevExpress_Win_Gantt>
+    <PkgDevExpress_Win_Dialogs Condition=" '$(PkgDevExpress_Win_Dialogs)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.dialogs\26.1.3</PkgDevExpress_Win_Dialogs>
+    <PkgDevExpress_Win_Dashboard Condition=" '$(PkgDevExpress_Win_Dashboard)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.win.dashboard\26.1.3</PkgDevExpress_Win_Dashboard>
+    <PkgDevExpress_ExpressApp Condition=" '$(PkgDevExpress_ExpressApp)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.expressapp\26.1.3</PkgDevExpress_ExpressApp>
+    <PkgDevExpress_ExpressApp_Win_Design Condition=" '$(PkgDevExpress_ExpressApp_Win_Design)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.expressapp.win.design\26.1.3</PkgDevExpress_ExpressApp_Win_Design>
+    <PkgDevExpress_ExpressApp_CodeAnalysis Condition=" '$(PkgDevExpress_ExpressApp_CodeAnalysis)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.expressapp.codeanalysis\26.1.3</PkgDevExpress_ExpressApp_CodeAnalysis>
+  </PropertyGroup>
+</Project>

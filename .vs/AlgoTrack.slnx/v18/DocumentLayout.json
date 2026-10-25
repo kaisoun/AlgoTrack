@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DotNetProjects\\AlgoTrack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB8632D-4D08-494C-AF24-5535883A3C60}|AlgoTrack.Blazor.Server\\AlgoTrack.Blazor.Server.csproj|e:\\dotnetprojects\\algotrack\\algotrack.blazor.server\\model.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}",
+      "RelativeMoniker": "D:0:0:{BDB8632D-4D08-494C-AF24-5535883A3C60}|AlgoTrack.Blazor.Server\\AlgoTrack.Blazor.Server.csproj|solutionrelative:algotrack.blazor.server\\model.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Model.xafml",
+              "DocumentMoniker": "E:\\DotNetProjects\\AlgoTrack\\AlgoTrack.Blazor.Server\\Model.xafml",
+              "RelativeDocumentMoniker": "AlgoTrack.Blazor.Server\\Model.xafml",
+              "ToolTip": "E:\\DotNetProjects\\AlgoTrack\\AlgoTrack.Blazor.Server\\Model.xafml",
+              "RelativeToolTip": "AlgoTrack.Blazor.Server\\Model.xafml",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARsSURBVDhPrZTNb1RlFMaf8957587MnZlOO\u002B2U0hawpXEaEj4iagzRDcRoTPwHWGBcs9aNYWvQYGLCUuPCxIVBAU2M2ES0UKAtHy0tYGGY0jKdudP5Zj7uve\u002B97/u6IDWxLPWXnM2TPL/kJCcH\u002BD9RSm2P/jO0Pdji5MmJ2MvjkVEILwPpTYBYGyxyD5qxspJtbZ49\u002B1hu72C7cGwgrh/JDFqqPxj86NSu/fsmjUPkO4cg3AyItaBbi1KF528tOXc\u002B/nx1hUdU69H1mlfOdf9ZlTJpi0AUhoL1/sHR1KfHXxkT\u002Bzuv0VDxPbI6GSIZI6UgAQQ\u002BwWkbhUIneu1uOHmus0Plzp1aKS5cLDV9VzrVdUdQ8/SxkNIjh\u002BD7Rw3feTMMnhE9vFftdcK0F4Y2REQhgtcA8msCjxuBXIvAa7xk1skyCrqwruhB9Pf8QvvmZ\u002B9cK5H64uiXivODCIIRCD\u002BplLIUg45IQDLFKRjkeDbIcL/J8TRBqPcyOHFNChOCFHHG9LqhhTZEV7\u002BXv8l/o8Ynr65HdZnWNAoRFJRSkJyj2VWw9RhKgyOojO9BjjbhjD4EDZVhxAU0zQAkgQgIPHC3TKVGVpvWPsz0nGEMGmMMAYC2D9iegQdqBIvGYdy1jiFrHUU5NA5umCBIMMWhGQEYI/AWUFv1tfwtV8vNtAO6fjwjYiEgGddIaDrWuYUlYxK50bdR3/kGeGIEpABSgCarMELzCCemEN8xA91ooLTsYn3Wx\u002BaKaFKgzdHsiX0dTfgmAo\u002BthYYxt/NdlA9/AMSSIJiA0IGtoyABYhxKrMPv/grpfYPigo1GPgAjo9qT6J1iZJgVIZUvpIQnGepcQ6XehdfhIKmg6Xg\u002BJkAUoFUsIn9rGU9v5NCyffAuIIWEphEf6E3nWTiVPs/MyBMicpj0wdwWnIqNTnEdTq0E4XVALABvlVHL3oa98AfK92fRrRYQOD6kVDB0s5pMpBaG\u002BoevaK9P7in0hPWooYJ4W\u002BqxAg2YxegoAqcNGXBACkjfQS27CHvpKmq5e/C7ZVj9jjLjJSEd2GGzdzaRSp9XNf2SduF2rvTWgcziUNKSrqT0hugZKCQzGkFB\u002BpzcRgX1tQfIz0/BqRUghYQeZtJKOUHYqtVj6Lto9u/4qgpx8cLpS64GAHM52x0d6M2NTUzetxPjnVUaPKAkdMYYqYDDqRXg1otQUFCSYBhaY8\u002Bu/hu7hq0zy5fXfpj/aeVB/uaG73d9aADQcn1lt1znznq1smw37b7MESiFfqUQk4HP/E4D3WYJSgqEDL2YTvVOT\u002Bwe\u002BXr20szMo4WnG8/KHdfv\u002BgDwXAgA9jNHZe2qV67VqqYZtlOptAxFohGP\u002B3GvXTfd5qawIuGHyb7YlGmqH6u5x5fn/5yvtertYMvxL\u002BEWAXeD4l9z\u002BeGR3U8SqcFAMS3pdhpRuM1CVBPnjFDwXaWyNn315wuuz70XPvQLwi1Wl67X4n2ph2OTB/OG4Hp/lH27dPWX7\u002B9OT63Y2ewLoi3\u002BBkcBZF0LtPhlAAAAAElFTkSuQmCC",
+              "WhenOpened": "2026-10-25T13:58:22.668Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

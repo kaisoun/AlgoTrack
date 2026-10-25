@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Start Both AlgoTrack.Win and AlgoTrack.MiddleTier",
+    "Projects": [
+      {
+        "Path": "AlgoTrack.MiddleTier\\AlgoTrack.MiddleTier.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "AlgoTrack.Win\\AlgoTrack.Win.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\kaisa\.nuget\packages\;C:\Program Files\DevExpress 26.1\Components\Offline Packages;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">7.0.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\kaisa\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files\DevExpress 26.1\Components\Offline Packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.props')" />
+    <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore\6.9.0\build\Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore\6.9.0\build\Swashbuckle.AspNetCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\10.0.0\buildTransitive\net10.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\10.0.0\buildTransitive\net10.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.11.0\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.11.0\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\10.0.0\build\net10.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\10.0.0\build\net10.0\Microsoft.EntityFrameworkCore.Design.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.app.internal.assets\10.0.13\build\Microsoft.AspNetCore.App.Internal.Assets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.app.internal.assets\10.0.13\build\Microsoft.AspNetCore.App.Internal.Assets.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.themes.fluent\26.1.3\buildTransitive\DevExpress.Blazor.Themes.Fluent.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.themes.fluent\26.1.3\buildTransitive\DevExpress.Blazor.Themes.Fluent.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.themes\26.1.3\buildTransitive\DevExpress.Blazor.Themes.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.themes\26.1.3\buildTransitive\DevExpress.Blazor.Themes.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.resources\26.1.3\buildTransitive\DevExpress.Blazor.Resources.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.resources\26.1.3\buildTransitive\DevExpress.Blazor.Resources.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor\26.1.3\buildTransitive\net5.0\DevExpress.Blazor.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor\26.1.3\buildTransitive\net5.0\DevExpress.Blazor.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.expressapp.blazor\26.1.3\buildTransitive\DevExpress.ExpressApp.Blazor.props" Condition="Exists('$(NuGetPackageRoot)devexpress.expressapp.blazor\26.1.3\buildTransitive\DevExpress.ExpressApp.Blazor.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.viewer\26.1.3\buildTransitive\DevExpress.Blazor.Viewer.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.viewer\26.1.3\buildTransitive\DevExpress.Blazor.Viewer.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.reporting.viewer\26.1.3\buildTransitive\DevExpress.Blazor.Reporting.Viewer.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.reporting.viewer\26.1.3\buildTransitive\DevExpress.Blazor.Reporting.Viewer.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.reporting.jsbasedcontrols.common\26.1.3\buildTransitive\DevExpress.Blazor.Reporting.JSBasedControls.Common.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.reporting.jsbasedcontrols.common\26.1.3\buildTransitive\DevExpress.Blazor.Reporting.JSBasedControls.Common.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.reporting.jsbasedcontrols\26.1.3\buildTransitive\DevExpress.Blazor.Reporting.JSBasedControls.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.reporting.jsbasedcontrols\26.1.3\buildTransitive\DevExpress.Blazor.Reporting.JSBasedControls.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.richedit\26.1.3\buildTransitive\DevExpress.Blazor.RichEdit.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.richedit\26.1.3\buildTransitive\DevExpress.Blazor.RichEdit.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.pdfviewer\26.1.3\buildTransitive\DevExpress.Blazor.PdfViewer.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.pdfviewer\26.1.3\buildTransitive\DevExpress.Blazor.PdfViewer.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.expressapp.office.blazor\26.1.3\buildTransitive\DevExpress.ExpressApp.Office.Blazor.props" Condition="Exists('$(NuGetPackageRoot)devexpress.expressapp.office.blazor\26.1.3\buildTransitive\DevExpress.ExpressApp.Office.Blazor.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.blazor.dashboard\26.1.3\buildTransitive\DevExpress.Blazor.Dashboard.props" Condition="Exists('$(NuGetPackageRoot)devexpress.blazor.dashboard\26.1.3\buildTransitive\DevExpress.Blazor.Dashboard.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.expressapp.dashboards.blazor\26.1.3\buildTransitive\DevExpress.ExpressApp.Dashboards.Blazor.props" Condition="Exists('$(NuGetPackageRoot)devexpress.expressapp.dashboards.blazor\26.1.3\buildTransitive\DevExpress.ExpressApp.Dashboards.Blazor.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.aiintegration.blazor.reporting.viewer\26.1.3\buildTransitive\DevExpress.AIIntegration.Blazor.Reporting.Viewer.props" Condition="Exists('$(NuGetPackageRoot)devexpress.aiintegration.blazor.reporting.viewer\26.1.3\buildTransitive\DevExpress.AIIntegration.Blazor.Reporting.Viewer.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\kaisa\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\kaisa\.nuget\packages\microsoft.codeanalysis.analyzers\3.11.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.data\26.1.3</PkgDevExpress_Data>
+    <PkgDevExpress_Xpo Condition=" '$(PkgDevExpress_Xpo)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.xpo\26.1.3</PkgDevExpress_Xpo>
+    <PkgDevExpress_DataAccess Condition=" '$(PkgDevExpress_DataAccess)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.dataaccess\26.1.3</PkgDevExpress_DataAccess>
+    <PkgDevExpress_ExpressApp Condition=" '$(PkgDevExpress_ExpressApp)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.expressapp\26.1.3</PkgDevExpress_ExpressApp>
+    <PkgDevExpress_ExpressApp_CodeAnalysis Condition=" '$(PkgDevExpress_ExpressApp_CodeAnalysis)' == '' ">C:\Users\kaisa\.nuget\packages\devexpress.expressapp.codeanalysis\26.1.3</PkgDevExpress_ExpressApp_CodeAnalysis>
+  </PropertyGroup>
+</Project>

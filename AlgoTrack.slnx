@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="EasyTest" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Project Path="AlgoTrack.Blazor.Server/AlgoTrack.Blazor.Server.csproj" />
+  <Project Path="AlgoTrack.MiddleTier/AlgoTrack.MiddleTier.csproj" />
+  <Project Path="AlgoTrack.Module/AlgoTrack.Module.csproj" />
+  <Project Path="AlgoTrack.Win/AlgoTrack.Win.csproj" />
+</Solution>

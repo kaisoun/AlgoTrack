@@ -1,0 +1,15 @@
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\bin\Debug\net10.0\AlgoTrack.Module.deps.json
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\bin\Debug\net10.0\AlgoTrack.Module.runtimeconfig.json
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\bin\Debug\net10.0\AlgoTrack.Module.dll
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\bin\Debug\net10.0\AlgoTrack.Module.pdb
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\obj\Debug\net10.0\AlgoTrack.Module.csproj.AssemblyReference.cache
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\obj\Debug\net10.0\AlgoTrack.Module.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\obj\Debug\net10.0\AlgoTrack.Module.AssemblyInfoInputs.cache
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\obj\Debug\net10.0\AlgoTrack.Module.AssemblyInfo.cs
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\obj\Debug\net10.0\AlgoTrack.Module.csproj.CoreCompileInputs.cache
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\obj\Debug\net10.0\AlgoTrack.Module.sourcelink.json
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\obj\Debug\net10.0\AlgoTrack.Module.dll
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\obj\Debug\net10.0\refint\AlgoTrack.Module.dll
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\obj\Debug\net10.0\AlgoTrack.Module.pdb
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\obj\Debug\net10.0\AlgoTrack.Module.genruntimeconfig.cache
+E:\DotNetProjects\AlgoTrack\AlgoTrack.Module\obj\Debug\net10.0\ref\AlgoTrack.Module.dll

@@ -32,7 +32,7 @@ namespace AlgoTrack.Module.BusinessObjects.Track
         public virtual string? Description  { get; set; }
         [System.ComponentModel.DataAnnotations.RequiredAttribute]
         public virtual Logiciel Logiciel { get; set; }
-        public virtual Version Version { get; set; }
+        public virtual LogicielVers LogicielVers { get; set; }
         public virtual Client? Client { get; set; }
         public virtual CltContact? CltContact { get; set; }
         public virtual Projet? Projet { get; set; }

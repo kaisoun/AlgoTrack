@@ -15,6 +15,7 @@ using DevExpress.Persistent.BaseImpl.EF.StateMachine;
 using System.ComponentModel;
 using AlgoTrack.Module.BusinessObjects;
 using DevExpress.ExpressApp.Security;
+using MonApp.Module.BusinessObjects;
 
 
 namespace AlgoTrack.Module
@@ -67,7 +68,22 @@ namespace AlgoTrack.Module
         public override void Setup(XafApplication application)
         {
             base.Setup(application);
-            // Manage various aspects of the application UI and behavior at the module level.
+            application.ObjectSpaceCreated += Application_ObjectSpaceCreated;
+        }
+
+        private void Application_ObjectSpaceCreated(object sender, ObjectSpaceCreatedEventArgs e)
+        {
+            
+            if (e.ObjectSpace is NonPersistentObjectSpace) return;
+            e.ObjectSpace.Committing += ObjectSpace_Commiting;
+        }
+
+        private void ObjectSpace_Commiting(object sender, CancelEventArgs e)
+        {
+            var os = (IObjectSpace)sender;
+            foreach (var obj in os.ModifiedObjects.OfType<ICodeNumerique>())
+                if (!os.IsDeletedObject(obj))
+                    obj.CodeNum = CodeNumHelper.Calculer(obj.Code);
         }
         public override void Setup(ApplicationModulesManager moduleManager)
         {
@@ -76,4 +92,5 @@ namespace AlgoTrack.Module
             stateMachineModule.StateMachineStorageType = typeof(StateMachine);
         }
     }
+    
 }

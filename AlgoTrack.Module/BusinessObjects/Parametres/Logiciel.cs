@@ -17,7 +17,7 @@ using System.ComponentModel;
 using AlgoTrack.Module.BusinessObjects;
 namespace AlgoTrack.Module.BusinessObjects.Parametres
 {
-    [NavigationItem("Parametres")]
+    [NavigationItem("Paramètres")]
     public class Logiciel : AuditedBaseObject
     { 
       [System.ComponentModel.DataAnnotations.RequiredAttribute]
@@ -26,7 +26,7 @@ namespace AlgoTrack.Module.BusinessObjects.Parametres
       
       [Aggregated]
       [DisplayName("Versions")]
-      public virtual ICollection<VersionLog> VersionLogs { get; set; } = new ObservableCollection<VersionLog>();
+      public virtual ICollection<LogicielVers> LogicielVerss { get; set; } = new ObservableCollection<LogicielVers>();
       
     }
 }

@@ -19,7 +19,7 @@ namespace AlgoTrack.Module.BusinessObjects.Track
 
 {
     [DefaultClassOptions]
-    //[NavigationItem("Track")]
+    [NavigationItem("Track")]
     public class Tache : AuditedBaseObject
     {
      

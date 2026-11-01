@@ -18,12 +18,12 @@ using System.ComponentModel;
 namespace AlgoTrack.Module.BusinessObjects.Parametres
 {
     [NavigationItem(false)]
-    public class VersionLog : AuditedBaseObject
+    public class LogicielVers : AuditedBaseObject
     { 
-      [System.ComponentModel.DataAnnotations.RequiredAttribute]
-      public virtual string VersionLogiciel { get; set; }
+      [System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage ="La version du logiciel est obligatoire")]
+      public virtual string LogVers { get; set; }
       public virtual DateTime DateVersion { get; set; }
-      public virtual string Description { get; set; }
+      public virtual string? Description { get; set; }
       
       
       

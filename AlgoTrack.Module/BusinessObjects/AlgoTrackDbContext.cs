@@ -14,6 +14,7 @@ using AlgoTrack.Module.BusinessObjects.Parametres;
 using AlgoTrack.Module.BusinessObjects.Bases;
 using AlgoTrack.Module.BusinessObjects.Track;
 using AlgoTrack.Module.BusinessObjects.Ventes;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 
 namespace AlgoTrack.Module.BusinessObjects
@@ -73,10 +74,19 @@ namespace AlgoTrack.Module.BusinessObjects
         public DbSet<Banque> Banquess { get; set; }
         //Track
         public DbSet<Logiciel> Logiciels { get; set; }
-        public DbSet<VersionLog> VersionLogs { get; set; }
+        public DbSet<LogicielVers> VersionLogs { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<TicketPJ> TicketPJs { get; set; }
         public DbSet<TicketComment> TicketComments { get; set; }
+        //Rendre les enumeration au format string possible : clarté d'affichage dans la base
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+            base.ConfigureConventions(configurationBuilder); // Bonne pratique d'appeler la base
+
+            // Convertit automatiquement TOUTES les enums en string dans la BDD
+            configurationBuilder.Properties<Enum>()
+                .HaveConversion<string>();
+        }
         //Surcharge de savechages pour renseigner les champs d'audit 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)
         {
@@ -149,8 +159,37 @@ namespace AlgoTrack.Module.BusinessObjects
             modelBuilder.Entity<Caisse>()
                 .ToTable("Caisse");
             modelBuilder.Entity<Banque>()
-                .ToTable("Banque");
+                .ToTable("Banque");       
+            foreach (var e in modelBuilder.Model.GetEntityTypes())
+                Console.WriteLine(e.ClrType.FullName);
+            foreach (var t in modelBuilder.Model.GetEntityTypes()
+                         .Where(t => typeof(AuditedBaseObject).IsAssignableFrom(t.ClrType)))
+            {
+                var e = modelBuilder.Entity(t.ClrType);
+                var p = e.Property(nameof(AuditedBaseObject.SeqNum));
+                p.HasColumnOrder(0);          // première colonne
+                p.UseIdentityByDefaultColumn();
+                p.Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Ignore);
+                e.HasIndex(nameof(AuditedBaseObject.SeqNum)).IsUnique();
+            }
+            foreach (var t in modelBuilder.Model.GetEntityTypes()
+                         .Where(t => typeof(AuditedBaseObject).IsAssignableFrom(t.ClrType)))
+            {
+                var e = modelBuilder.Entity(t.ClrType);
+
+                e.Property(nameof(AuditedBaseObject.SeqNum)).HasColumnOrder(0);
+                e.Property("ID").HasColumnOrder(1);                                  // la clé Guid
+                e.Property(nameof(AuditedBaseObject.CreeLe)).HasColumnOrder(2);
+                e.Property(nameof(AuditedBaseObject.CreePar)).HasColumnOrder(3);   // voir note ci-dessous
+                e.Property(nameof(AuditedBaseObject.CreeSur)).HasColumnOrder(4);
+                e.Property(nameof(AuditedBaseObject.ModifieLe)).HasColumnOrder(5);
+                e.Property(nameof(AuditedBaseObject.ModifiePar)).HasColumnOrder(6);
+                e.Property(nameof(AuditedBaseObject.ModifieSur)).HasColumnOrder(7);
+
+                // ... identity et index de SeqNum comme avant
+            }
         }
+ 
     }
     
     public class AlgoTrackAuditingDbContext : DbContext

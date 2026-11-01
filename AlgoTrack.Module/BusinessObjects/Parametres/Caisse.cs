@@ -22,7 +22,8 @@ namespace AlgoTrack.Module.BusinessObjects.Parametres
     public class Caisse : CompteTr
     {
         public virtual string? Agence { get; set; }
-        [MaxLength(12)] public virtual string? TypeCaisse { get; set; } = "Divers";
+        [MaxLength(12)] 
+        public virtual string? TypeCaisse { get; set; } = "Divers";
 
         public Caisse()
         {

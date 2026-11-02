@@ -13,7 +13,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
-namespace AlgoTrack.Module.BusinessObjects.Bases
+namespace AlgoTrack.Module.BusinessObjects
 {
     public class CltAdresse : AuditedBaseObject
 

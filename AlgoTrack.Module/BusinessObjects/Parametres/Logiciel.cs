@@ -15,7 +15,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using AlgoTrack.Module.BusinessObjects;
-namespace AlgoTrack.Module.BusinessObjects.Parametres
+namespace AlgoTrack.Module.BusinessObjects
 {
     [NavigationItem("Paramètres")]
     public class Logiciel : AuditedBaseObject

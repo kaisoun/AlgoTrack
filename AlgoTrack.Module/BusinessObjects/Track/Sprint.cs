@@ -14,7 +14,7 @@ using DevExpress.Persistent.Base.General;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
-namespace AlgoTrack.Module.BusinessObjects.Track
+namespace AlgoTrack.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [NavigationItem("Track")]

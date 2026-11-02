@@ -17,17 +17,17 @@ using System.ComponentModel;
 using AlgoTrack.Module.BusinessObjects;
 using MonApp.Module.BusinessObjects;
 
-namespace AlgoTrack.Module.BusinessObjects.Bases
+namespace AlgoTrack.Module.BusinessObjects
 {
     
-    [DefaultClassOptions]
-    [NavigationItem("Bases")]
+  
+    [NavigationItem("False")]
     [Microsoft.EntityFrameworkCore.Index(nameof(Code), IsUnique = true)]
-    public class Client : AuditedBaseObject , ICodeNumerique
+    public class Tier : AuditedBaseObject
     {
        
         [System.ComponentModel.DataAnnotations.RequiredAttribute]
-        [MaxLength(16, ErrorMessage = "Le code client ne peut pas dépasser 16 caractères")]
+        [MaxLength(16, ErrorMessage = "Le code ne peut pas dépasser 16 caractères")]
         [Display(Order = 2)]
         [DisplayName("Code")]
         [Column(Order = 8)]
@@ -37,7 +37,7 @@ namespace AlgoTrack.Module.BusinessObjects.Bases
         [Column(Order = 9)]
         public virtual long CodeNum { get; set; }
         [Display(Order = 3)]
-        [RuleRequiredField("IntituleClient_Required", DefaultContexts.Save, "L'intitulé du client est obligatoire")]
+        [RuleRequiredField("IntituleClient_Required", DefaultContexts.Save, "L'intitulé est obligatoire")]
         [MaxLength(60)]
         [DisplayName("Intitule")]
         public virtual string IntClt { get; set; } = "";
@@ -198,5 +198,3 @@ namespace AlgoTrack.Module.BusinessObjects.Bases
 
     }
 }
-
-

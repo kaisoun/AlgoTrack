@@ -14,9 +14,9 @@ using DevExpress.Persistent.Base.General;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
-using AlgoTrack.Module.BusinessObjects.Bases;
+using AlgoTrack.Module.BusinessObjects;
 
-namespace AlgoTrack.Module.BusinessObjects.Ventes
+namespace AlgoTrack.Module.BusinessObjects
 {
     [NavigationItem(false)]
     public class VenteLig : AuditedBaseObject

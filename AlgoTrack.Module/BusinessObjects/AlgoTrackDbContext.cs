@@ -5,18 +5,12 @@ using DevExpress.ExpressApp.EFCore.Updating;
 using DevExpress.Persistent.BaseImpl.EF;
 using DevExpress.Persistent.BaseImpl.EF.PermissionPolicy;
 using DevExpress.Persistent.BaseImpl.EF.StateMachine;
+
 using DevExpress.Persistent.BaseImpl.EFCore.AuditTrail;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Design;
-
-using AlgoTrack.Module.BusinessObjects.Parametres;
-using AlgoTrack.Module.BusinessObjects.Bases;
-using AlgoTrack.Module.BusinessObjects.Track;
-using AlgoTrack.Module.BusinessObjects.Ventes;
 using Microsoft.EntityFrameworkCore.Metadata;
-
-
 namespace AlgoTrack.Module.BusinessObjects
 {
     [TypesInfoInitializer(typeof(DbContextTypesInfoInitializer<AlgoTrackEFCoreDbContext>))]
@@ -46,15 +40,14 @@ namespace AlgoTrack.Module.BusinessObjects
         //Mes classes
         public DbSet<Article> Articles { get; set; }
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Fournisseur> Fournisseurs { get; set; }
         public DbSet<CltAdresse> CltAdresses { get; set; }
         public DbSet<CltContact> CltContacts { get; set; }
         public DbSet<Projet> Projets { get; set; }
-        public DbSet<GpTache> GpTaches { get; set; }
-        public DbSet<Tache> Taches { get; set; }
-        public DbSet<SsTache> SsTaches { get; set; }
-        public DbSet<Sprint> Sprints { get; set; }
+        
         public DbSet<Contrat> Contrats { get; set; }
-   
+        
+        //Ventes
         public DbSet<Vente> Ventes { get; set; }
         public DbSet<VenteLig> VenteLigs { get; set; }
         public DbSet<Devis> Deviss { get; set; }
@@ -64,17 +57,25 @@ namespace AlgoTrack.Module.BusinessObjects
         public DbSet<Retour> Retours { get; set; }
         public DbSet<Facture> Factures { get; set; }
         public DbSet<Avoir> Avoirs { get; set; }
+        
+        //MvtTiers
         public DbSet<AffectRegl> AffectRegs { get; set; }
 
         public DbSet<Reglement> Reglements { get; set; }
         //public DbSet<ReglClient> ReglementClients { get; set; }
         //public DbSet<ReglFournisseur> ReglementFournisseurs { get; set; }
+        //Tresorerie
         public DbSet<CompteTr> CompteTrs { get; set; }
         public DbSet<Caisse> Caissess { get; set; }
         public DbSet<Banque> Banquess { get; set; }
+        
         //Track
         public DbSet<Logiciel> Logiciels { get; set; }
         public DbSet<LogicielVers> VersionLogs { get; set; }
+        public DbSet<GpTache> GpTaches { get; set; }
+        public DbSet<Tache> Taches { get; set; }
+        public DbSet<SsTache> SsTaches { get; set; }
+        public DbSet<Sprint> Sprints { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<TicketPJ> TicketPJs { get; set; }
         public DbSet<TicketComment> TicketComments { get; set; }

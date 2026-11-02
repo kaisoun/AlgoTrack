@@ -15,9 +15,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using AlgoTrack.Module.BusinessObjects.Bases;
-using AlgoTrack.Module.BusinessObjects.Parametres;
-namespace AlgoTrack.Module.BusinessObjects.Track
+namespace AlgoTrack.Module.BusinessObjects
 
 {
     [DefaultClassOptions]

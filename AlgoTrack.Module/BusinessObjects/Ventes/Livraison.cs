@@ -15,7 +15,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
-namespace AlgoTrack.Module.BusinessObjects.Ventes
+namespace AlgoTrack.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [NavigationItem("Ventes")]

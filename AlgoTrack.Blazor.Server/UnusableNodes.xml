@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Node Id="Items@4c20d90e-fe05-499a-a177-81bf9c6670ab" UnusableNodeName="Items">
+        <Node Id="StateMachine_ListView" UnusableNodeName="Item" ViewId="StateMachine_ListView" Index="99" />
+      </Node>
+    </Items>
+  </NavigationItems>
+</Application>

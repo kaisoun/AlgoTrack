@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Client_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="CategClt" Index="1" />
+        <PropertyEditor Id="RegimeTvaClt" Index="14" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="MF">
+          <LayoutGroup Id="Matricule Fiscale">
+            <LayoutItem Id="RegimeTvaClt" ViewItem="RegimeTvaClt" />
+            <LayoutItem Id="CategClt" ViewItem="CategClt" />
+          </LayoutGroup>
+        </LayoutGroup>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Client">
+              <LayoutGroup Id="Client_col2">
+                <LayoutItem Id="CategClt" Removed="True" />
+                <LayoutItem Id="RegimeTvaClt" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Default">
+        <Items Id="Items">
+          <Item Id="Tache_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

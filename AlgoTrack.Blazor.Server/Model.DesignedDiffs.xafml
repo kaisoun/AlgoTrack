@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="Cancel" Caption="Annuler" />
+      <Action Id="CancelAction" Caption="Annuler" />
+      <Action Id="Delete" ImageMode="UseActionImage" QuickAccess="False" ShowItemsOnClick="False" />
+      <Action Id="Save" Shortcut="Enter" NullValuePrompt="CtrlS" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="AlgoTrack.Module.BusinessObjects.Bases.Client">
+      <AppearanceRules>
+        <AppearanceRule Id="StyleMatriculeFiscal" BackColor="224, 224, 224" FontColor="0, 0, 192" FontStyle="Bold" Visibility="Show" TargetItems="MatFiscal" IsNewNode="True" />
+      </AppearanceRules>
+    </Class>
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Caption="Général" Index="0">
+        <Items>
+          <Item Id="@8353e3fb-a8d8-448c-9cd3-28211947eea5" Caption="State Machine" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Bases" Index="1" />
+      <Item Id="Track" Index="2">
+        <Items>
+          <Item Id="Ticket_ListView" Index="0" />
+          <Item Id="GpTache_ListView" Index="1" />
+          <Item Id="Tache_ListView" ObjectKey="" Index="2" ViewId="Tache_ListView" IsNewNode="True" />
+          <Item Id="Sprint_ListView" Index="3" />
+        </Items>
+      </Item>
+      <Item Id="Ventes" Index="3">
+        <Items>
+          <Item Id="Devis_ListView" Index="0" />
+          <Item Id="Commande_ListView" Index="1" />
+          <Item Id="BonPour_ListView" Index="2" />
+          <Item Id="Livraison_ListView" Index="3" />
+          <Item Id="Retour_ListView" Index="4" />
+          <Item Id="Facture_ListView" Index="5" />
+          <Item Id="Avoir_ListView" Index="6" />
+          <Item Id="Reglement_ListView" Caption="Reglements" Index="6" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Index="4" />
+      <Item Id="State Machine" Index="4" Removed="True" />
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="26.1.3.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="26.1.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="26.1.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Client_DetailView">
+      <Items>
+        <PropertyEditor Id="Activite" Index="0" />
+        <PropertyEditor Id="CltAdresses" Index="2" />
+        <PropertyEditor Id="CltContacts" Index="3" />
+        <PropertyEditor Id="ID" Index="5" />
+        <PropertyEditor Id="IntClt" Index="6" />
+        <PropertyEditor Id="MailClt1" Index="7" />
+        <PropertyEditor Id="MailClt2" Index="8" />
+        <PropertyEditor Id="MajForf" Index="9" />
+        <PropertyEditor Id="NbEtabClt" Index="10" />
+        <PropertyEditor Id="NoteClt" Index="11" />
+        <PropertyEditor Id="Tel1" Index="12" />
+        <PropertyEditor Id="Tel2" Index="13" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Client">
+              <LayoutGroup Id="Client_col2">
+                <LayoutItem Id="CleIdUnique" Removed="True" />
+                <LayoutItem Id="IdUnique" Removed="True" />
+                <LayoutItem Id="NbEtabClt" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+        <LayoutGroup Id="MF" Caption="MF" IsNewNode="True">
+          <LayoutGroup Id="Matricule Fiscale" CaptionHorizontalAlignment="Far" CaptionLocation="Top" CaptionVerticalAlignment="Top" HorizontalAlign="Center" VerticalAlign="Middle" Direction="Horizontal" ShowCaption="True" IsNewNode="True">
+            <LayoutItem Id="IdUnique" ViewItem="IdUnique" ShowCaption="" Index="0" IsNewNode="True" />
+            <LayoutItem Id="CleIdUnique" ViewItem="CleIdUnique" ShowCaption="" Index="1" IsNewNode="True" />
+            <LayoutItem Id="CategClt" ViewItem="CategClt" ShowCaption="" Index="2" IsNewNode="True" />
+            <LayoutItem Id="RegimeTvaClt" ViewItem="RegimeTvaClt" ShowCaption="" Index="3" IsNewNode="True" />
+            <LayoutItem Id="NbEtabClt" ViewItem="NbEtabClt" ShowCaption="" Index="4" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

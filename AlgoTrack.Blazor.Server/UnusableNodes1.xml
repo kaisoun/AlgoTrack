@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Ventes">
+        <Items Id="Items">
+          <Item Id="Vente_ListView" Caption="Devis" Index="0" ObjectKey="TypeDoc=Devis">
+            <Items Id="Items" Index="1" />
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

@@ -7,11 +7,24 @@
   </ActionDesign>
   <NavigationItems NavigationStyle="Accordion">
     <Items>
-      <Item Id="Default" Caption="Général" Index="0" />
-      <Item Id="Bases" Index="1" />
-      <Item Id="Track" Index="2" />
+      <Item Id="Default" Caption="Général" Index="0">
+        <Items>
+          <Item Id="Configuration" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="ParamCodif_ListView" ViewId="ParamCodif_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="Event_ListView" Visible="False" />
+        </Items>
+      </Item>
+      <Item Id="Paramètres" Index="1" />
+      <Item Id="Bases" Index="2" />
       <Item Id="Ventes" Index="3" />
-      <Item Id="Reports" Index="5" />
+      <Item Id="Stock" Caption="Stock" Index="4" IsNewNode="True" />
+      <Item Id="Achat" Caption="Achats" Index="5" IsNewNode="True" />
+      <Item Id="Track" Index="6" />
+      <Item Id="Reports" Index="7" />
+      <Item Id="Configuration" Removed="True" />
       <Item Id="State Machine" Removed="True" />
     </Items>
   </NavigationItems>

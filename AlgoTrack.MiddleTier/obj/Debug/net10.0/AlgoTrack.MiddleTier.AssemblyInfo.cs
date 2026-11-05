@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlgoTrack.MiddleTier")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5c8a9e5d0b616efe85b59520c4ee83e357e6e02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+539b42b83d976813018f61813441b3ecab185b1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlgoTrack.MiddleTier")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlgoTrack.MiddleTier")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.*")]

@@ -38,18 +38,33 @@ namespace AlgoTrack.Module.BusinessObjects
         public DbSet<Event> Events { get; set; }
         public DbSet<HCategory> HCategories { get; set; }
         //Mes classes
+        //Paremetres
+        public DbSet<Banque> Banques { get; set; }
+        public DbSet<Caisse> Caisses { get; set; }
+        public DbSet<ModeReg> ModeRegs { get; set; }
+        public DbSet<TVA> TVAs { get; set; }
+        public DbSet<TypeRet> TypeRets { get; set; }
+        public DbSet<Unite> Unites { get; set; }
+        //Bases
+        public DbSet<FamArticle> FamArticles { get; set; }
+        public DbSet<SsFamArticle> SsFamArticles { get; set; }
+        public DbSet<CategArt> CategArts { get; set; }
         public DbSet<Article> Articles { get; set; }
+        public DbSet<TypeArt> TypeArts { get; set; }
+        public DbSet<FamClient> FamClients { get; set; }
+        public DbSet<FamFournisseur> FamFournisseurs { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Fournisseur> Fournisseurs { get; set; }
         public DbSet<CltAdresse> CltAdresses { get; set; }
+        public DbSet<FrnAdresse> FrnAdresses { get; set; }
+        
         public DbSet<CltContact> CltContacts { get; set; }
+        public DbSet<FrnContact> FrnContacts { get; set; }
         public DbSet<Projet> Projets { get; set; }
         
-        public DbSet<Contrat> Contrats { get; set; }
+        public DbSet<ContratClt> ContratClts { get; set; }
         
         //Ventes
-        public DbSet<Vente> Ventes { get; set; }
-        public DbSet<VenteLig> VenteLigs { get; set; }
         public DbSet<Devis> Deviss { get; set; }
         public DbSet<Commande> Commandes { get; set; }
         public DbSet<Livraison> Livraisons { get; set; }
@@ -57,17 +72,36 @@ namespace AlgoTrack.Module.BusinessObjects
         public DbSet<Retour> Retours { get; set; }
         public DbSet<Facture> Factures { get; set; }
         public DbSet<Avoir> Avoirs { get; set; }
+        //Achats
+        public DbSet<DevisAc> DevisAcs { get; set; }
+        public DbSet<CommandeAc> CommandeAcs { get; set; }
+        public DbSet<LivraisonAc> LivraisonAcs { get; set; }
+        public DbSet<BonPourAc> BonPourAcs { get; set; }
+        public DbSet<RetourAc> RetourAcs { get; set; }
+        public DbSet<FactureAc> FactureAcs { get; set; }
+        public DbSet<AvoirAc> AvoirAcs { get; set; }
+        //Stocks
+        public DbSet<BonAjust> BonAjusts { get; set; }
+        public DbSet<BonEchant> BonEchants { get; set; }
+        public DbSet<BonEntree> BonEntrees { get; set; }
+        public DbSet<BonPrelev> BonPrelevs { get; set; }
+        public DbSet<BonProd> BonProds { get; set; }
+        public DbSet<BonSortie> BonSorties { get; set; }
+        public DbSet<LigneStk> LigneStk { get; set; }
         
         //MvtTiers
+        public DbSet<Reglement> Reglements { get; set; }
         public DbSet<AffectRegl> AffectRegs { get; set; }
 
-        public DbSet<Reglement> Reglements { get; set; }
+        
         //public DbSet<ReglClient> ReglementClients { get; set; }
         //public DbSet<ReglFournisseur> ReglementFournisseurs { get; set; }
+        
         //Tresorerie
         public DbSet<CompteTr> CompteTrs { get; set; }
         public DbSet<Caisse> Caissess { get; set; }
         public DbSet<Banque> Banquess { get; set; }
+        
         
         //Track
         public DbSet<Logiciel> Logiciels { get; set; }
@@ -101,7 +135,6 @@ namespace AlgoTrack.Module.BusinessObjects
             ApplyAuditFields();
             return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         }
-
         private void ApplyAuditFields()
         {
             var now = DateTime.Now;
@@ -120,8 +153,6 @@ namespace AlgoTrack.Module.BusinessObjects
                     e.Entity.ModifiePar = user;
                 }
             }
-            
-            
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

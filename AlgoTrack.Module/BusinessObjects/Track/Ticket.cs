@@ -12,7 +12,7 @@ using DevExpress.ExpressApp.DC;
 using System.Collections.ObjectModel;
 using DevExpress.Persistent.Base.General;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+using DataAnn = System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 namespace AlgoTrack.Module.BusinessObjects
@@ -23,7 +23,7 @@ namespace AlgoTrack.Module.BusinessObjects
     public class Ticket : AuditedBaseObject
     {
         
-        [Display(Order = 2)]
+        [DataAnn.Display(Order = 2)]
         public virtual DateTime DateTicket { get; set; } = DateTime.Now;
         [System.ComponentModel.DataAnnotations.RequiredAttribute]
         public virtual string Intitule { get; set; }

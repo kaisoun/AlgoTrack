@@ -60,4 +60,8 @@
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BusinessObjects\5Paie\" />
+    <Folder Include="BusinessObjects\7Fiscal\" />
+  </ItemGroup>
 </Project>

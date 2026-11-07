@@ -15,17 +15,20 @@ using System.ComponentModel.DataAnnotations.Schema;
 using DataAnn = System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using AlgoTrack.Module.BusinessObjects;
+using Microsoft.EntityFrameworkCore;
+
 namespace AlgoTrack.Module.BusinessObjects
 {
    
     public abstract  class Entete : AuditedBaseObject
     {
-        
         [System.ComponentModel.DataAnnotations.Required]
         [DataAnn.MaxLength(12)]
         public virtual String TypeDoc { get; set; } 
         [System.ComponentModel.DataAnnotations.Required]
         public virtual DateTime DateVente { get; set; } = DateTime.Now;
+        public virtual Localisation Localisation { get; set; }  //peut etre automatique pour usage simplifie
+        public virtual Depot Depot { get; set; } //peut etre automatique pour usage simplifie sera automatiquement rapporte aux lignes
         [System.ComponentModel.DataAnnotations.Required]
         [DataAnn.MaxLength(8)]
         public virtual string CodeSouche { get; set; }
@@ -33,24 +36,41 @@ namespace AlgoTrack.Module.BusinessObjects
         public virtual int NumDoc { get; set; }
         [System.ComponentModel.DataAnnotations.Required]
         public virtual Client Client { get; set; } = null!;
+        [Precision(12,6)]
         public virtual decimal BrutHt { get; set; } = 0;
+        [Precision(12,6)]
         public virtual decimal RemiseLig { get; set; } = 0;
+        [Precision(12,6)]
         public virtual decimal TotalHt { get; set; } = 0;
+        [Precision(12,6)]
         public virtual decimal TauxRemDoc { get; set; } = 0;
+        [Precision(12,6)]
         public virtual decimal MontantRemDoc { get; set; } = 0;
+        [Precision(12,6)]
         public virtual decimal NetHt { get; set; } = 0;
+        [Precision(12,6)]
         public virtual decimal TotFocec { get; set; } = 0;
+        [Precision(12,6)]
         public virtual decimal TotDc { get; set; } = 0;
+        [Precision(12,6)]
         public virtual decimal TotTva { get; set; } = 0;
+        [Precision(12,6)]
         public virtual decimal TotAutTaxe { get; set; } = 0;
+
         public virtual int Timbre { get; set; } = 0;
+        [Precision(1,3)]
         public virtual decimal MtTimbre { get; set; } = 0;
+        [Precision(12,6)]
         public virtual decimal TotTtc { get; set; } = 0;
+        [Precision(12,6)]
         public virtual int AvForfait { get; set; } = 0;
+        [Precision(12,6)]
         public virtual decimal MtAvanceforf { get; set; } = 0;
         [DataAnn.MaxLength(3)]
         public virtual string Devise { get; set; } = "DNT";
+        [Precision(6,6)]
         public virtual decimal TauxConv { get; set; } = 1;
+        [Precision(12,6)]
         public virtual decimal NetTtc { get; set; } = 0;
         
         [Aggregated]

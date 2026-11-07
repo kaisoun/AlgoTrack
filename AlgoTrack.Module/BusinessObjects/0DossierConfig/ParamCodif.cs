@@ -29,7 +29,7 @@ namespace AlgoTrack.Module.BusinessObjects
     [DataAnn.MaxLength(25)] 
     [System.ComponentModel.DataAnnotations.RequiredAttribute]
     public virtual TypeEntite TypeEntite{ get; set; }
-    public bool Obligatoire { get; set; } = true;
+    public virtual bool Obligatoire { get; set; } = true;
     public virtual bool FormatSimple { get; set; } = false;
     }
 }

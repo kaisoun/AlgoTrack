@@ -19,6 +19,53 @@ using MonApp.Module.BusinessObjects;
 
 namespace AlgoTrack.Module.BusinessObjects 
 {
+    [NavigationItem("Bases")]
+    [Microsoft.EntityFrameworkCore.Index(nameof(Code), IsUnique = true)]
+    public class FamClient : FamTier
+    {
+    
+    }
+   
+    public class CltAdresse : TierAdresse
+
+    {
+        public virtual Client Client { get; set; }
+    }
+    
+    public class CltContact : Adresse
+
+    {
+        [System.ComponentModel.DataAnnotations.Required]
+        public virtual Client Client { get; set; } = null!;
+        [DataAnn.MaxLength(50)]
+        public virtual char? IntCt { get; set; }
+        [DataAnn.MaxLength(80)]
+        public virtual string? FonctionCt { get; set; }
+        [DataAnn.MaxLength(200)]
+        public virtual string? NoteCt { get; set; }
+    }
+    
+    [NavigationItem(false)]
+    public class ContratClt : AuditedBaseObject
+    {
+        [System.ComponentModel.DataAnnotations.Required]
+        public virtual Client Client { get; set; } = null!;
+        [System.ComponentModel.DataAnnotations.Required]
+        [DataAnn.Display(Order = 1)]
+        [DisplayName("Libellé")]
+        public virtual String LibContrat { get; set; } = null!;
+        
+        [DataAnn.Display(Order = 2)]
+        public virtual DateTime DateDebContrat { get; set; } = DateTime.Now;
+        [DataAnn.Display(Order = 3)]
+        public virtual DateTime DateFinContrat { get; set; } = DateTime.Now;
+        
+        [DataAnn.Display(Order = 4)] 
+        [DisplayName("Libellé")]
+        public virtual string? NotesContrat { get; set; } = "";
+        
+    }
+    
     [DefaultClassOptions]
     [NavigationItem("Bases")]
     [Microsoft.EntityFrameworkCore.Index(nameof(Code), IsUnique = true)]

@@ -22,7 +22,7 @@ namespace AlgoTrack.Module.BusinessObjects
     
     [DefaultClassOptions]
     [DefaultListViewOptions(allowEdit: true, newItemRowPosition: NewItemRowPosition.Top)]
-    public class Unite
+    public class Unite : AuditedBaseObject
     {
         [DataAnn.Required]
         [DataAnn.StringLength(3)]

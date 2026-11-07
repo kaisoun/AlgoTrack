@@ -14,11 +14,11 @@ using DevExpress.Persistent.Base.General;
 using System.ComponentModel.DataAnnotations.Schema;
 using DataAnn = System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
-using AlgoTrack.Module.BusinessObjects.Parametres;
+
 namespace AlgoTrack.Module.BusinessObjects
 {
     [NavigationItem("Ventes")]
-    public class Reglement : AuditedBaseObject
+    public abstract class Reglement : AuditedBaseObject
     {
         public virtual DateTime DateRegl { get; set; } = DateTime.Now;
         public virtual String TypeReg { get; set; }
@@ -27,5 +27,15 @@ namespace AlgoTrack.Module.BusinessObjects
         public virtual ModeReg ModeReg { get; set; }
         public virtual DateTime DateEch { get; set; }
         public virtual CompteTr CompteTr { get; set; }
+    }
+    [NavigationItem("Ventes")]
+    public class RegClt : Reglement
+    {
+        
+    }
+    [NavigationItem("Achats")]
+    public class RegFrn : Reglement
+    {
+        
     }
 }

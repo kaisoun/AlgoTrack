@@ -17,22 +17,8 @@ using System.ComponentModel;
 
 namespace AlgoTrack.Module.BusinessObjects
 {
-    [DefaultClassOptions]
-    [NavigationItem("Bases")]
-    
-    [Microsoft.EntityFrameworkCore.Index(nameof(CodeCateg), IsUnique = true)]
-    public class CategArt : AuditedBaseObject
+    public class ExerciceCompt : BaseObject
     {
-
-        [DataAnn.MaxLength(25)]
-        [System.ComponentModel.DataAnnotations.RequiredAttribute]
-        public virtual String CodeCateg { get; set; } = null!;
-        [System.ComponentModel.DataAnnotations.RequiredAttribute]
-        [DataAnn.MaxLength(60)]
-        public virtual string IntCateg { get; set; } = null!;
-        [DataAnn.MaxLength(300)]
-        public virtual string? Description { get; set; }
+        [RuleRange(2010, 2056)] public virtual int Exercice { get; set; }
     }
-    
-    
 }

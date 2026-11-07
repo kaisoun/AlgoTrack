@@ -107,5 +107,53 @@ namespace AlgoTrack.Module.DatabaseUpdate
             }
             return defaultRole;
         }
+        
+    }
+    public override void UpdateDatabaseAfterUpdateSchema()
+    {
+        base.UpdateDatabaseAfterUpdateSchema();
+
+        InitialiserTypesArt();
+    }
+
+    private void InitialiserTypesArt()
+    {
+        var types = new[]
+        {
+            new { Code = "MAR", Intitule = "MARCHANDISE" },
+            new { Code = "SER", Intitule = "SERVICE" },
+            new { Code = "MP", Intitule = "MATIERES PREMIERES" },
+            new { Code = "MC", Intitule = "MATIERE CONSOMMABLE" },
+            new { Code = "PSF", Intitule = "PRODUIT SEMI FINI" },
+            new { Code = "PF", Intitule = "PRODUIT FINI" },
+            new { Code = "SP", Intitule = "SOUS PRODUIT" },
+            new { Code = "DEC", Intitule = "DECHET" },
+            new { Code = "PRC", Intitule = "PIECES DE RECHANGE" },
+            new { Code = "IMM", Intitule = "IMMOBILISATIONS" },
+            new { Code = "EMB", Intitule = "EMBALLAGE" },
+            new { Code = "OUT", Intitule = "OUTILLAGE" }
+        };
+
+        foreach (var type in types)
+        {
+            bool existe = ObjectSpace.GetObjectsQuery<TypeArt>()
+                .Any(x => x.CodeType == type.Code);
+
+            if (existe)
+                continue;
+
+            var nouvelObjet = ObjectSpace.CreateObject<TypeArt>();
+
+            nouvelObjet.CodeType = type.Code;
+            nouvelObjet.Intitule = type.Intitule;
+            nouvelObjet.SuiviStock = false;
+            nouvelObjet.ModeValStk = ModeValStk.Aucune;
+            nouvelObjet.DispoVente = false;
+            nouvelObjet.DispoAchat = false;
+            nouvelObjet.DispoStock = false;
+            nouvelObjet.DispoProd = false;
+        }
+
+        ObjectSpace.CommitChanges();
     }
 }

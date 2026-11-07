@@ -17,6 +17,7 @@ using System.ComponentModel;
 namespace AlgoTrack.Module.BusinessObjects
 {
    
+    
     public class ParamCodifDet : AuditedBaseObject 
     {
         

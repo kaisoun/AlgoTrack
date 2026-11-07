@@ -19,9 +19,21 @@ namespace AlgoTrack.Module.BusinessObjects
 {
 
     [NavigationItem(false)]
-    public class AffectRegl : AuditedBaseObject 
+    public abstract class AffectRegl : AuditedBaseObject 
     {
         public virtual DateTime Dateregl { get; set; } = DateTime.Now;
+        
+        
+    }
+    [NavigationItem(false)]
+    public class AffectRegClt : AffectRegl 
+    {
+        
+        
+    }
+    [NavigationItem(false)]
+    public class AffectRegFrn : AffectRegl 
+    {
         
         
     }

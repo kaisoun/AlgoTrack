@@ -22,7 +22,7 @@ namespace AlgoTrack.Module.BusinessObjects
 {
     
     [Microsoft.EntityFrameworkCore.Index(nameof(Code), IsUnique = true)]
-    public class FamTier : AuditedBaseObject, ICodeNumerique
+    public abstract class FamTier : AuditedBaseObject, ICodeNumerique
     {
         [System.ComponentModel.DataAnnotations.RequiredAttribute]
         [DataAnn.MaxLength(16, ErrorMessage = "Le code ne peut pas dépasser 16 caractères")]

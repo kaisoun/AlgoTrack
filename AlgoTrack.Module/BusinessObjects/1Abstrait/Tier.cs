@@ -43,17 +43,7 @@ namespace AlgoTrack.Module.BusinessObjects
         [DataAnn.MaxLength(30)]
         [DisplayName("Activité")]
         public virtual string? Activite { get; set; }
-        [DataAnn.MaxLength(12)]
-        public virtual string Tel1 { get; set; } = "";
-        [DataAnn.MaxLength(12)]
-        public virtual string Tel2 { get; set; } = "";
-        [DataAnn.Display(Order = 10)]
-        [DataAnn.RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage = "Format d'email invalide")]
-        [DataAnn.MaxLength(60)]
-        public virtual string MailClt1 { get; set; } = "";
-        [DataAnn.RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage = "Format d'email invalide")]
-        [DataAnn.MaxLength(60)]
-        public virtual string MailClt2 { get; set; } = "";
+        
         [DataAnn.Display(Order = 11)]
         [DetailViewLayout("Tabs", LayoutGroupType.TabbedGroup, 100)]
         [ModelDefault("RowCount", "10")]

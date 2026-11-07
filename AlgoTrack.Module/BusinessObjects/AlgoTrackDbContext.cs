@@ -38,13 +38,20 @@ namespace AlgoTrack.Module.BusinessObjects
         public DbSet<Event> Events { get; set; }
         public DbSet<HCategory> HCategories { get; set; }
         //Mes classes
+        //Config
+        public DbSet<Souche> Souches { get; set; }
         //Paremetres
         public DbSet<Banque> Banques { get; set; }
         public DbSet<Caisse> Caisses { get; set; }
+        public DbSet<Devise> Devises { get; set; }
+        
+            
         public DbSet<ModeReg> ModeRegs { get; set; }
         public DbSet<TVA> TVAs { get; set; }
         public DbSet<TypeRet> TypeRets { get; set; }
         public DbSet<Unite> Unites { get; set; }
+        public DbSet<ParamCodif> ParamCodifs { get; set; }
+        public DbSet<ParamCodifDet> ParamCodifDets { get; set; }
         //Bases
         public DbSet<FamArticle> FamArticles { get; set; }
         public DbSet<SsFamArticle> SsFamArticles { get; set; }
@@ -63,6 +70,12 @@ namespace AlgoTrack.Module.BusinessObjects
         public DbSet<Projet> Projets { get; set; }
         
         public DbSet<ContratClt> ContratClts { get; set; }
+        
+        public DbSet<Representant> Representants { get; set; }
+        
+        public DbSet<Localisation> Localisations { get; set; }
+        public DbSet<Depot> Depots { get; set; }
+        
         
         //Ventes
         public DbSet<Devis> Deviss { get; set; }
@@ -89,18 +102,46 @@ namespace AlgoTrack.Module.BusinessObjects
         public DbSet<BonSortie> BonSorties { get; set; }
         public DbSet<LigneStk> LigneStk { get; set; }
         
+        public DbSet<ArtDep> ArtDeps { get; set; }
+        public DbSet<MvtArt> MvtArts { get; set; }
+        public DbSet<Inventaire> Inventaires { get; set; }
+        public DbSet<LigInvent> LigInvents { get; set; }
+        
+        
         //MvtTiers
         public DbSet<Reglement> Reglements { get; set; }
-        public DbSet<AffectRegl> AffectRegs { get; set; }
-
+        public DbSet<RegClt> RegClts { get; set; }
+        public DbSet<RegFrn> RegFrns { get; set; }
+        public DbSet<AffectRegClt> AffectRegClts { get; set; }
+        public DbSet<AffectRegFrn> AffectRegFrns { get; set; }
+        public DbSet<MvtClt> MvtClts { get; set; }
+        public DbSet<MvtFrn> MvtFrns { get; set; }
         
-        //public DbSet<ReglClient> ReglementClients { get; set; }
-        //public DbSet<ReglFournisseur> ReglementFournisseurs { get; set; }
+        
         
         //Tresorerie
         public DbSet<CompteTr> CompteTrs { get; set; }
         public DbSet<Caisse> Caissess { get; set; }
         public DbSet<Banque> Banquess { get; set; }
+        
+        //Compta
+        public DbSet<ExerciceCompt> Exercices { get; set; }
+        public DbSet<Compte> Comptes { get; set; }
+        public DbSet<Journaux> Journauxs { get; set; }
+        public DbSet<EntJournal> EntJournals { get; set; }
+        public DbSet<LigJournal> LigJournals { get; set; }
+        
+        
+        //Paie
+        public DbSet<Affectation> Affectations { get; set; }
+        public DbSet<EntPaie> EntPaies { get; set; }
+        public DbSet<LigPaie> LigPaies { get; set; }
+        public DbSet<Personnel> Personnels { get; set; }
+        public DbSet<Qualification> Qualifications { get; set; }
+        public DbSet<Rubriques> Rubriquess { get; set; }
+        public DbSet<SitAdmin> SitAdmins { get; set; }
+       
+        
         
         
         //Track
@@ -186,12 +227,19 @@ namespace AlgoTrack.Module.BusinessObjects
                 .HasMany(t => t.Aspects)
                 .WithOne(t => t.Owner)
                 .OnDelete(DeleteBehavior.Cascade);
+            /*modelBuilder.Entity<AuditedBaseObject>()
+                .UseTpcMappingStrategy();
+            modelBuilder.Entity<Adresse>()
+                .UseTpcMappingStrategy();
+            modelBuilder.Entity<Tier>()
+                .UseTpcMappingStrategy();
             modelBuilder.Entity<CompteTr>()
-                .ToTable("CompteTr");
-            modelBuilder.Entity<Caisse>()
-                .ToTable("Caisse");
-            modelBuilder.Entity<Banque>()
-                .ToTable("Banque");       
+                .UseTpcMappingStrategy();
+            modelBuilder.Entity<Entete>()
+                .UseTpcMappingStrategy();
+            modelBuilder.Entity<Ligne>()
+                .UseTpcMappingStrategy();
+            */
             foreach (var e in modelBuilder.Model.GetEntityTypes())
                 Console.WriteLine(e.ClrType.FullName);
             foreach (var t in modelBuilder.Model.GetEntityTypes()

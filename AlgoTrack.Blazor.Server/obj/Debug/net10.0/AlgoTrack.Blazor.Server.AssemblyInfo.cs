@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlgoTrack.Blazor.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+539b42b83d976813018f61813441b3ecab185b1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5afa2689a5bebf0b1bc8c8d0525795c9e2850db3")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlgoTrack.Blazor.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlgoTrack.Blazor.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.*")]

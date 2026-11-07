@@ -23,6 +23,7 @@ namespace AlgoTrack.Module.BusinessObjects
     {
         public virtual string? Agence { get; set; }
         public virtual string? Adresse { get; set; }
+        public virtual string? Complement { get; set; }
         public virtual string? Ville { get; set; }
         public virtual string? CP { get; set; }
         [DataAnn.MaxLength(20), DataAnn.MinLength(20)] 

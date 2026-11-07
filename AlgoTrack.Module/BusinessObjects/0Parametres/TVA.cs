@@ -24,7 +24,7 @@ namespace AlgoTrack.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [DefaultListViewOptions(allowEdit: true, newItemRowPosition: NewItemRowPosition.Top)]
-    public class TVA
+    public class TVA : AuditedBaseObject
     {
         [DataAnn.Required]
         [DataAnn.StringLength(3)]

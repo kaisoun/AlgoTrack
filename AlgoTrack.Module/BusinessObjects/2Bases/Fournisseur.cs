@@ -19,7 +19,29 @@ using MonApp.Module.BusinessObjects;
 
 namespace AlgoTrack.Module.BusinessObjects
 {
+    [NavigationItem("Bases")]
+    [Microsoft.EntityFrameworkCore.Index(nameof(Code), IsUnique = true)]
+    public class FamFournisseur : FamTier
+    {
     
+    }
+    public class FrnAdresse : TierAdresse
+
+    {
+        public virtual Client Client { get; set; }
+    }
+    public class FrnContact : Adresse
+
+    {
+        [System.ComponentModel.DataAnnotations.Required]
+        public virtual Fournisseur Fournisseur { get; set; } = null!;
+        [DataAnn.MaxLength(50)]
+        public virtual char? IntCt { get; set; }
+        [DataAnn.MaxLength(80)]
+        public virtual string? FonctionCt { get; set; }
+        [DataAnn.MaxLength(200)]
+        public virtual string? NoteCt { get; set; }
+    }
     [DefaultClassOptions]
     [NavigationItem("Bases")]
     [Microsoft.EntityFrameworkCore.Index(nameof(Code), IsUnique = true)]
@@ -32,6 +54,8 @@ namespace AlgoTrack.Module.BusinessObjects
         [DisplayName("Contacts")]
         public virtual ICollection<FrnContact> FrnContacts { get; set; } = new ObservableCollection<FrnContact>();
     }
+    
+   
 }
 
 

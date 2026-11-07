@@ -33,7 +33,22 @@ namespace AlgoTrack.Module.BusinessObjects
         public virtual decimal PrixVt { get; set; } 
         [System.ComponentModel.DataAnnotations.Required]
         public virtual decimal TauxTVA { get; set; }
+        public virtual decimal TauxFodecAc { get; set; }
+        public virtual decimal TauxFodecVt { get; set; }
+        public virtual decimal TauxDCAc { get; set; }
+        public virtual decimal TauxDCVt { get; set; }
+        
         public virtual string? DesigLongue { get; set; }
+    }
+
+    [DefaultClassOptions]
+    [NavigationItem("Bases")]
+
+    
+    public class ArtDetail : AuditedBaseObject
+    {
+        public virtual Article Article { get; set; }
+        
     }
     
     

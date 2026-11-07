@@ -23,7 +23,9 @@
       <Item Id="Stock" Caption="Stock" Index="4" IsNewNode="True" />
       <Item Id="Achat" Caption="Achats" Index="5" IsNewNode="True" />
       <Item Id="Track" Index="6" />
-      <Item Id="Reports" Index="7" />
+      <Item Id="Achats" Index="7" />
+      <Item Id="Stocks" Index="8" />
+      <Item Id="Reports" Index="9" />
       <Item Id="Configuration" Removed="True" />
       <Item Id="State Machine" Removed="True" />
     </Items>
